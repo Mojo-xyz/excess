@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Sea Sails · Company Introduction · For Excess Catamarans</title>
+<meta name="description" content="Red Sea Sails · Sailing operator on Egypt's Red Sea coast · School, charter, regattas, events. Introduction for Excess Catamarans, July 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&family=Hanken+Grotesk:wght@300;400;500;600;700&family=Antonio:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0A1A20; --sea:#0D222A; --sea-2:#123039; --sea-3:#1A4450;
+  --azure:#2A8D9C; --azure-bright:#3FB8C9; --gold:#4EC9C0; --gold-soft:#8FE3DC;
+  --pearl:#F2F5F4; --pearl-card:#FFFFFF; --text-dark:#0C2029; --muted:#5C6F78;
+  --line:rgba(78,201,192,0.2); --maxw:1180px; --r:14px; --r-sm:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Hanken Grotesk",system-ui,sans-serif;color:var(--text-dark);background:var(--pearl);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;width:100%}
+
+/* Type */
+.num{font-family:"Antonio",sans-serif;font-weight:300;letter-spacing:.02em;line-height:.85}
+.eyebrow{font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--gold);margin-bottom:20px;display:inline-flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--gold)}
+.h-display{font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:-.025em;line-height:1.0;font-size:clamp(40px,5.2vw,68px);color:var(--ink)}
+.h-display em{font-style:normal;color:var(--gold);font-weight:300}
+.h-section{font-family:"Archivo",sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.05;font-size:clamp(32px,4.2vw,52px);color:var(--ink);margin-bottom:24px}
+.h-section em{font-style:normal;color:var(--gold);font-weight:300}
+.s-dark .h-display,.s-sea .h-display,.s-dark .h-section,.s-sea .h-section{color:#FFFFFF}
+.s-pearl .h-section em,.s-pearl .h-display em{color:var(--azure)}
+.lede{font-size:18px;line-height:1.7;max-width:640px;color:var(--muted);margin-bottom:40px}
+.lede b{color:var(--text-dark);font-weight:600}
+.s-dark .lede,.s-sea .lede{color:rgba(255,255,255,0.65)}
+.s-dark .lede b,.s-sea .lede b{color:rgba(255,255,255,0.9);font-weight:600}
+.rule{width:48px;height:2px;background:var(--gold);margin:32px 0}
+
+/* Sections */
+.section{position:relative;padding:120px 0;overflow:hidden;border-top:1px solid transparent;border-image:linear-gradient(90deg,transparent 8%,rgba(78,201,192,0.35),rgba(255,255,255,0.12),transparent 92%) 1}
+.section:first-of-type,.interstitial{border-top:none;border-image:none}
+.section.compact{padding:80px 0}
+.section.hero{padding:0;min-height:100vh;display:flex;align-items:center}
+.s-dark{background:var(--ink);color:#E8F1F4}
+.s-dark.atmospheric{background:radial-gradient(ellipse 65% 50% at 75% 0%,rgba(78,201,192,0.06) 0%,transparent 60%),radial-gradient(ellipse 55% 60% at 10% 100%,rgba(42,124,138,0.08) 0%,transparent 60%),var(--ink)}
+.s-dark::before,.s-sea::before{content:"";position:absolute;inset:0;z-index:0;opacity:.7;pointer-events:none;
+  background-image:repeating-linear-gradient(45deg,rgba(78,201,192,.15) 0 1px,transparent 1px 7px),repeating-linear-gradient(-45deg,rgba(255,255,255,.02) 0 1px,transparent 1px 9px);background-size:8px 8px,10px 10px}
+.s-sea{background:var(--sea);color:#E8F1F4}
+.s-pearl{background:linear-gradient(170deg,#FFFFFF 0%,var(--pearl) 42%,#E9EFEE 100%);color:var(--text-dark)}
+.s-pearl::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 60% 50% at 85% 0%,rgba(78,201,192,0.05),transparent 55%)}
+.s-pearl .wrap{position:relative;z-index:1}
+.s-pearl .lede{color:#3A4A52}
+.s-pearl .lede b{color:var(--ink)}
+.s-pearl .rc-text{color:#46555D}
+.h-content{position:relative;z-index:2}
+
+.sail-ornament{position:absolute;top:-10%;right:-5%;width:55%;height:115%;background:linear-gradient(135deg,rgba(78,201,192,0.08) 0%,transparent 65%);clip-path:polygon(100% 0,5% 100%,100% 100%);z-index:1;pointer-events:none}
+.orb{position:absolute;z-index:0;pointer-events:none;border-radius:50%;filter:blur(60px)}
+.orb.teal{background:radial-gradient(circle at 38% 35%,rgba(78,201,192,0.30),rgba(78,201,192,0.06) 55%,transparent 72%)}
+.orb.deep{background:radial-gradient(circle at 42% 40%,rgba(42,141,156,0.26),transparent 70%)}
+.s-pearl .orb{opacity:.6}
+.s-dark .orb,.s-sea .orb{opacity:.75}
+.ghost-glyph{position:absolute;z-index:0;pointer-events:none;opacity:1}
+.ghost-glyph svg{width:100%;height:100%;stroke:rgba(12,32,41,0.045);fill:none;stroke-width:0.6}
+.s-dark .ghost-glyph svg,.s-sea .ghost-glyph svg{stroke:rgba(255,255,255,0.035)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:999px;font-family:"Archivo",sans-serif;font-weight:600;font-size:14px;transition:all .2s;cursor:pointer}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-soft)}
+.btn-ghost{background:transparent;color:#FFFFFF;border:1px solid rgba(255,255,255,0.3)}
+.btn-ghost:hover{background:rgba(255,255,255,0.06);border-color:var(--gold)}
+
+/* Cover */
+.cover-bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
+.cover-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.cover-overlay{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 0%,rgba(78,201,192,0.14) 0%,transparent 60%),radial-gradient(ellipse 50% 60% at 0% 100%,rgba(42,124,138,0.10) 0%,transparent 55%),linear-gradient(135deg,rgba(11,14,20,0.92) 0%,rgba(11,14,20,0.52) 50%,rgba(11,14,20,0.52) 100%);z-index:2}
+.cover-content{position:relative;z-index:3;padding:96px 0;width:100%}
+.cover-stack{font-family:"Archivo",sans-serif;font-weight:800;color:#FFFFFF;letter-spacing:-.02em;line-height:0.92;font-size:clamp(44px,7.4vw,76px)}
+.cover-stack em{display:block;font-style:normal;color:var(--gold);font-weight:300;font-size:clamp(17px,2.5vw,28px);letter-spacing:.04em;line-height:1.35;margin-top:18px}
+.cover-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:60px;padding-top:34px;border-top:1px solid var(--line)}
+.cover-meta-item .cm-lbl{font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.18em;font-size:9px;color:var(--gold);margin-bottom:9px}
+.cover-meta-item .cm-val{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.55}
+.scroll-hint{position:absolute;bottom:32px;right:32px;font-family:"Archivo",sans-serif;font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:10px;color:rgba(255,255,255,0.4);z-index:4;display:flex;align-items:center;gap:12px}
+.scroll-hint::after{content:'';width:28px;height:1px;background:var(--gold)}
+
+/* Nav dots */
+.nav-dots{position:fixed;right:28px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px;z-index:100}
+.nav-dot{width:6px;height:6px;border-radius:50%;background:rgba(124,124,124,0.45);cursor:pointer;transition:all .25s}
+.nav-dot.active,.nav-dot:hover{background:var(--gold);transform:scale(1.6)}
+
+.corner{position:absolute;top:32px;right:32px;font-family:"Archivo",sans-serif;font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:10px;color:rgba(255,255,255,0.3);z-index:3}
+.s-pearl .corner{color:rgba(7,33,46,0.3)}
+
+/* Icons */
+.ic{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+/* Icon strip */
+.icon-strip{background:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.icon-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:24px 0}
+.icon-row .item{display:flex;align-items:center;gap:12px;font-size:13px;color:rgba(255,255,255,0.85)}
+.icon-row svg{width:20px;height:20px}
+
+/* Image break */
+.img-break{height:62vh;min-height:400px;background-size:cover;background-position:center;position:relative;display:flex;align-items:flex-end;overflow:hidden}
+.img-break::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,14,20,0.92) 0%,rgba(11,14,20,0.25) 50%,transparent 100%);z-index:1}
+.img-break .wrap{position:relative;z-index:2;padding-bottom:60px}
+.img-break .eyebrow{color:var(--gold-soft);margin-bottom:14px}
+.img-break h2{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(30px,4.5vw,52px);color:#FFFFFF;letter-spacing:-.02em;line-height:1.05}
+.img-break h2 em{font-style:normal;color:var(--gold-soft);font-weight:300}
+
+/* Category cards */
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.cat-grid.two{grid-template-columns:repeat(2,1fr)}
+.cat-grid.four{grid-template-columns:repeat(4,1fr)}
+.cat-card{padding:32px 28px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:var(--r);border-top:3px solid;min-height:0}
+.s-pearl .cat-card{background:var(--pearl-card);border-color:rgba(0,0,0,0.05)}
+.cc-1{border-top-color:var(--gold)}
+.cc-2{border-top-color:var(--azure-bright)}
+.cc-3{border-top-color:rgba(255,255,255,0.25)}
+.s-pearl .cc-3{border-top-color:rgba(7,33,46,0.2)}
+.cc-icon{margin-bottom:18px}
+.cc-icon .ic{width:30px;height:30px}
+.cc-tag{font-family:"Archivo",sans-serif;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:9px;color:var(--gold);margin-bottom:12px}
+.cc-title{font-family:"Archivo",sans-serif;font-weight:700;font-size:18px;color:#FFFFFF;margin-bottom:8px;line-height:1.2}
+.s-pearl .cc-title{color:var(--ink)}
+.cc-body{font-size:12.5px;color:rgba(255,255,255,0.62);line-height:1.7}
+.s-pearl .cc-body{color:var(--muted)}
+.cat-card[style*="pearl-card"] .cc-body{color:var(--muted)}
+.cat-card[style*="pearl-card"] .cc-title{color:var(--ink)}
+
+/* Range cards */
+.range-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.range-grid.four{grid-template-columns:repeat(4,1fr)}
+.range-card{background:var(--pearl-card);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(7,33,46,0.06)}
+.s-dark .range-card,.s-sea .range-card{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.08)}
+.rc-photo{position:relative;height:178px;background-size:cover;background-position:center;background-color:var(--sea-2)}
+.rc-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,14,20,0.78) 0%,rgba(11,14,20,0.15) 52%,transparent 100%)}
+.rc-tag{position:absolute;right:18px;top:16px;z-index:2;font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:9px;color:rgba(255,255,255,0.92);text-align:right;line-height:1.35}
+.rc-body{padding:24px 26px 28px;flex:1;display:flex;flex-direction:column}
+.rc-title{font-family:"Archivo",sans-serif;font-weight:700;font-size:18px;color:var(--ink);margin-bottom:8px;line-height:1.2}
+.s-dark .rc-title,.s-sea .rc-title{color:#fff}
+.rc-text{font-size:12.5px;color:var(--muted);line-height:1.7}
+.s-dark .rc-text,.s-sea .rc-text{color:rgba(255,255,255,0.62)}
+
+/* Team grid — special range variant with round photo */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.team-card{text-align:center}
+.team-photo{width:140px;height:140px;border-radius:50%;background:var(--sea-2);background-size:cover;background-position:center;margin:0 auto 18px;border:2px solid var(--line)}
+.team-name{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px;color:#fff;margin-bottom:4px}
+.s-pearl .team-name{color:var(--ink)}
+.team-role{font-family:"Archivo",sans-serif;font-weight:600;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.team-bio{font-size:12.5px;color:rgba(255,255,255,0.62);line-height:1.7;max-width:220px;margin:0 auto}
+.s-pearl .team-bio{color:var(--muted)}
+
+/* Actuals */
+.actuals{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.actual-card{background:var(--pearl-card);border:1px solid rgba(0,0,0,0.05);border-radius:var(--r);padding:28px 26px;border-top:3px solid var(--gold)}
+.s-dark .actual-card,.s-sea .actual-card{background:rgba(255,255,255,0.03)}
+.actual-card.target{border-top-color:var(--azure-bright)}
+.ac-yr{font-family:"Antonio",sans-serif;font-weight:300;font-size:40px;color:var(--ink);line-height:1;margin-bottom:4px}
+.s-dark .ac-yr,.s-sea .ac-yr{color:#fff}
+.ac-tag{font-family:"Archivo",sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:9px;color:var(--gold);margin-bottom:14px}
+.ac-line{font-size:13px;color:var(--muted);line-height:1.95}
+.s-dark .ac-line,.s-sea .ac-line{color:rgba(255,255,255,0.7)}
+.ac-line b{color:var(--ink);font-weight:600}
+.s-dark .ac-line b,.s-sea .ac-line b{color:#fff}
+
+/* Stat heroes */
+.stat-heroes{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;border-top:1px solid rgba(255,255,255,0.12);border-bottom:1px solid rgba(255,255,255,0.12)}
+.s-pearl .stat-heroes{border-color:rgba(0,0,0,0.1)}
+.stat-hero{padding:32px 28px;border-right:1px solid rgba(255,255,255,0.08)}
+.s-pearl .stat-hero{border-right-color:rgba(0,0,0,0.08)}
+.stat-hero:last-child{border-right:none}
+.stat-hero .num{font-size:clamp(40px,4.4vw,60px);color:#fff;margin-bottom:14px}
+.s-pearl .stat-hero .num{color:var(--ink)}
+.stat-hero .num em{font-style:normal;color:var(--gold)}
+.stat-hero .lbl{font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:var(--gold);margin-bottom:7px}
+.stat-hero .sub{font-size:12px;color:rgba(255,255,255,0.55)}
+.s-pearl .stat-hero .sub{color:var(--muted)}
+
+/* Photo band */
+.photo-band{margin:44px 0 8px;border-radius:var(--r);overflow:hidden;position:relative;height:300px;background-size:cover;background-position:center;background-color:var(--sea-2)}
+.photo-band::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,14,20,0.85) 0%,rgba(11,14,20,0.18) 60%,transparent 100%)}
+.photo-band .pb-cap{position:absolute;left:0;bottom:0;z-index:2;padding:26px 30px}
+.photo-band .pb-eye{font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--gold-soft);margin-bottom:8px}
+.photo-band .pb-h{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(20px,2.4vw,28px);color:#fff;line-height:1.15}
+
+/* Split feature */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:48px;align-items:stretch}
+.split-photo{border-radius:var(--r);overflow:hidden;background-size:cover;background-position:center;background-color:var(--sea-2);min-height:360px;position:relative}
+.split-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,transparent 40%,rgba(11,14,20,0.5) 100%)}
+.feat-list{list-style:none;margin-top:8px}
+.feat-list li{position:relative;padding:11px 0 11px 26px;font-size:14px;line-height:1.55;border-bottom:1px solid rgba(255,255,255,0.07)}
+.s-pearl .feat-list li{border-bottom-color:rgba(7,33,46,0.07);color:var(--text-dark)}
+.feat-list li:last-child{border-bottom:none}
+.feat-list li::before{content:'';position:absolute;left:0;top:18px;width:7px;height:7px;border-radius:2px;background:var(--gold)}
+
+/* Callout */
+.callout{margin-top:44px;padding:26px 34px;background:rgba(78,201,192,0.06);border-left:3px solid var(--gold);border-radius:var(--r)}
+.callout p{font-family:"Archivo",sans-serif;font-weight:400;font-style:italic;font-size:16px;color:rgba(255,255,255,0.9);line-height:1.55}
+.s-pearl .callout p{color:var(--ink)}
+
+/* Contact / closing */
+.closing-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.closing-quote{margin-top:24px;padding:28px 32px;background:rgba(78,201,192,0.08);border-left:3px solid var(--gold);border-radius:var(--r)}
+.closing-quote p{font-family:"Archivo",sans-serif;font-weight:300;font-style:italic;font-size:16px;color:rgba(255,255,255,0.85);line-height:1.75}
+.contact-card{background:rgba(255,255,255,0.03);border-radius:var(--r);padding:30px 32px;border-left:3px solid var(--gold)}
+.c-row{display:flex;gap:16px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:13px;align-items:baseline}
+.c-row:last-child{border-bottom:none}
+.c-lbl{font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:9px;color:var(--gold);min-width:54px}
+.c-val{color:rgba(255,255,255,0.85);line-height:1.7}
+.c-val a{border-bottom:1px solid rgba(255,255,255,0.3)}
+
+/* Sticky top nav */
+.topnav{position:fixed;top:0;left:0;right:0;z-index:120;padding:13px 32px;background:rgba(10,26,32,0.8);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid rgba(78,201,192,0.14);transform:translateY(-100%);transition:transform .5s cubic-bezier(.4,0,.2,1),opacity .3s ease;opacity:0}
+.topnav.visible{transform:translateY(0);opacity:1}
+.topnav-inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px}
+.topnav-mark{font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.18em;font-size:11px;color:#fff;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.topnav-mark::before{content:"";width:22px;height:2px;background:var(--gold)}
+.topnav-items{display:flex;align-items:center;gap:26px;flex-wrap:nowrap}
+.topnav-items a{font-family:"Archivo",sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:10.5px;color:rgba(255,255,255,0.68);padding:6px 0;position:relative;transition:color .2s ease;white-space:nowrap}
+.topnav-items a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.topnav-items a:hover{color:#fff}
+.topnav-items a:hover::after,.topnav-items a.active::after{transform:scaleX(1)}
+.topnav-items a.active{color:#fff}
+@media (max-width:1080px){.topnav-items{gap:18px}.topnav-items a{font-size:9.5px;letter-spacing:.12em}}
+@media (max-width:900px){.topnav{display:none}}
+
+/* Plan table */
+.plan-table{margin-top:48px;background:var(--pearl-card);border-radius:var(--r);border:1px solid rgba(7,33,46,0.06);overflow:hidden}
+.pt-head,.pt-row{display:grid;grid-template-columns:150px repeat(5,1fr);border-bottom:1px solid rgba(7,33,46,0.06)}
+.pt-row:last-child{border-bottom:none}
+.pt-head{background:rgba(7,33,46,0.04)}
+.pt-yr{font-family:"Antonio",sans-serif;font-weight:400;font-size:22px;letter-spacing:.02em;color:var(--ink);padding:16px 14px}
+.pt-head .pt-lbl{font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:var(--azure);padding:22px 18px;background:transparent;border-right:none}
+.pt-lbl{font-family:"Archivo",sans-serif;font-weight:700;font-size:13px;color:var(--ink);padding:18px;background:rgba(7,33,46,0.02);border-right:1px solid rgba(7,33,46,0.06);display:flex;align-items:center}
+.pt-cell{padding:16px 14px;font-size:12px;color:var(--muted);line-height:1.5;border-right:1px solid rgba(7,33,46,0.04)}
+.pt-cell:last-child{border-right:none}
+.pt-cell b{color:var(--ink);font-weight:600}
+.pt-row.accelerator .pt-lbl{background:rgba(78,201,192,0.10);color:var(--azure);border-left:3px solid var(--gold)}
+.pt-row.accelerator .pt-cell{background:rgba(78,201,192,0.04)}
+
+/* Data table */
+.dtable-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:44px}
+.dtable{width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px}
+.dtable th{font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:10px;color:var(--gold);text-align:left;padding:14px 16px;border-bottom:1px solid rgba(255,255,255,0.16)}
+.dtable td{padding:15px 16px;border-bottom:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.75);line-height:1.5;vertical-align:top}
+.dtable td b{color:#fff;font-weight:600}
+.dtable tr:last-child td{border-bottom:none}
+.dtable .r-live td{background:rgba(78,201,192,0.06)}
+.s-pearl .dtable th{color:var(--azure);border-bottom-color:rgba(7,33,46,0.16)}
+.s-pearl .dtable td{color:var(--muted);border-bottom-color:rgba(7,33,46,0.08)}
+.s-pearl .dtable td b{color:var(--ink)}
+
+@media (max-width:900px){
+  .plan-table{overflow-x:auto}
+  .pt-head,.pt-row{grid-template-columns:120px repeat(5,160px);min-width:920px}
+}
+
+/* Regional map */
+.mapfig{margin-top:44px;border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,0.08)}
+.mapfig svg{display:block;width:100%;height:auto;background:linear-gradient(160deg,#0B2129 0%,#0F2A33 100%)}
+.map-legend{display:flex;flex-wrap:wrap;gap:14px 26px;padding:15px 22px;background:rgba(255,255,255,0.03);border-top:1px solid rgba(255,255,255,0.06)}
+.map-legend .li{display:flex;align-items:center;gap:9px;font-family:"Archivo",sans-serif;font-weight:600;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,0.72)}
+.map-legend .mk{width:13px;height:13px;flex-shrink:0}
+.map-legend .m-live{background:#4EC9C0;border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,0.55)}
+.map-legend .m-dev{background:transparent;border:2px solid #3FB8C9;border-radius:50%}
+.map-legend .m-across{background:#8FE3DC;transform:rotate(45deg)}
+.map-legend .m-air{color:#3FB8C9;font-size:13px;line-height:1;display:flex;align-items:center;justify-content:center}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* Responsive */
+@media (max-width:900px){
+  .section{padding:80px 0}.wrap{padding:0 20px}
+  .corner{display:none}.nav-dots{display:none}
+  .cover-meta{grid-template-columns:1fr 1fr;gap:20px}
+  .icon-row{grid-template-columns:1fr 1fr;gap:14px}
+  .cat-grid,.cat-grid.two,.cat-grid.four,.range-grid,.range-grid.four,.actuals,.split,.closing-grid,.team-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-heroes{grid-template-columns:1fr 1fr}
+  .stat-hero{border-right:none;border-bottom:1px solid rgba(255,255,255,0.08)}
+}
+@media (min-width:901px) and (max-width:1200px){
+  .cat-grid.four,.range-grid.four{grid-template-columns:repeat(2,1fr)}
+  .stat-heroes{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+
+<body>
+<nav class="nav-dots" id="navDots"></nav>
+<nav class="topnav" role="navigation" aria-label="Primary">
+  <div class="topnav-inner">
+      <a href="#s-cover" class="topnav-mark">Red Sea Sails</a>    <div class="topnav-items">
+      <a href="#s-who">Overview</a>
+      <a href="#s-coast">The Coast</a>
+      <a href="#s-events">Events</a>
+      <a href="#s-market">Market</a>
+      <a href="#s-plan">Plan</a>
+      <a href="#s-ask">The Ask</a>
+      <a href="#s-contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ICON SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ic-sail" viewBox="0 0 24 24"><path d="M13 3v15M13 5L6 18h7M13 18h6"/></symbol>
+  <symbol id="ic-anchor" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="1.8"/><path d="M12 6.3V19M8.5 9h7M5.5 13a6.5 6.5 0 0013 0M5.5 13H7.5M16.5 13h2"/></symbol>
+  <symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c3.4 3.5 3.4 12.5 0 16M12 4c-3.4 3.5-3.4 12.5 0 16"/></symbol>
+  <symbol id="ic-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 01-8 0zM6 5H4a3 3 0 003.2 4M18 5h2a3 3 0 01-3.2 4M9.5 19h5M12 14v5"/></symbol>
+  <symbol id="ic-helm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5"/><circle cx="12" cy="12" r="2"/><path d="M12 2.5V6M12 18v3.5M2.5 12H6M18 12h3.5M5.6 5.6l2.5 2.5M15.9 15.9l2.5 2.5M18.4 5.6l-2.5 2.5M8.1 15.9l-2.5 2.5"/></symbol>
+  <symbol id="ic-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 9.5h16M8.5 3v4M15.5 3v4"/></symbol>
+  <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 10-14 0c0 4.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+  <symbol id="ic-flag" viewBox="0 0 24 24"><path d="M6 3v18M6 4h11l-3 3.2 3 3.2H6"/></symbol>
+</svg>
+
+<!-- ═══ 01 · COVER ═══ -->
+<section class="section hero s-dark" id="s-cover">
+  <div class="cover-bg" style="background-image:url('cover.jpg');"></div>
+  <video class="cover-video" autoplay muted loop playsinline poster="cover.jpg">
+    <source src="regatta-gouna.mp4" type="video/mp4">
+  </video>
+  <div class="cover-overlay"></div>
+  <div class="corner" style="color:rgba(255,255,255,0.4);">Red Sea Sails · Company Introduction</div>
+  <div class="wrap cover-content">
+    <img src="rss-logo.png" alt="Red Sea Sails" style="height:52px;width:auto;margin-bottom:32px;display:block;">
+    <span class="eyebrow">Company Introduction · For Excess Catamarans · July 2026</span>
+    <div class="cover-stack">RED SEA SAILS<em>A sailing hub on the Egyptian Red Sea coast established in 2015 · Independent, owner-run, IYT-accredited.</em></div>
+    <div class="cover-meta">
+      <div class="cover-meta-item"><div class="cm-lbl">Founded</div><div class="cm-val">2015<br>Independent, owner-run</div></div>
+      <div class="cover-meta-item"><div class="cm-lbl">Bases</div><div class="cm-val">El Gouna<br>Somabay (from 2026)</div></div>
+      <div class="cover-meta-item"><div class="cm-lbl">Operation</div><div class="cm-val">School · Charter<br>Regattas · Events</div></div>
+      <div class="cover-meta-item"><div class="cm-lbl">Season</div><div class="cm-val">Year-round<br>Peak Nov–Apr</div></div>
+    </div>
+  </div>
+  <div class="scroll-hint">Introduction</div>
+</section>
+
+<!-- ═══ 02 · ICON STRIP ═══ -->
+<div class="icon-strip">
+  <div class="wrap">
+    <div class="icon-row">
+      <div class="item"><svg class="ic"><use href="#ic-sail"/></svg> IYT-accredited since 2015</div>
+      <div class="item"><svg class="ic"><use href="#ic-pin"/></svg> Bases in El Gouna and Somabay</div>
+      <div class="item"><svg class="ic"><use href="#ic-flag"/></svg> Regatta programme since 2022</div>
+      <div class="item"><svg class="ic"><use href="#ic-calendar"/></svg> 300+ sailable days a year</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 03 · WHO WE ARE ═══ -->
+<section class="section s-pearl" id="s-who">
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="ghost-glyph" style="width:min(40vw,520px);height:min(40vw,520px);right:-4%;top:-6%;"><svg><use href="#ic-sail"/></svg></div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Who we are</span>
+    <h2 class="h-display">A sailing company<br><em>built by sailors.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">Red Sea Sails was founded in 2015 as an IYT-accredited sailing school on the Egyptian Red Sea coast. Over ten years we've grown into a full operator across school, charter, regattas and events — <b>independent, owner-run, and based in El Gouna with expansion into Somabay from 2026.</b></p>
+    <p class="lede">We built the local sailing community from a starting point of almost none. Today it's the base our regatta programme runs on and the reason catamarans have started to outnumber monohulls at our events.</p>
+    <div class="split" style="margin-top:44px;align-items:center;">
+      <div>
+        <span class="eyebrow" style="margin-bottom:14px;">Where it started</span>
+        <p class="lede" style="margin-top:0;">It started with a boat called <b>Sea Spray</b>. We bought her knowing almost nothing about sailing and learned the hard way — books, YouTube, and time on the water — until we could sail her ourselves. Friends came along, then more friends, and weekends on the water grew into a community. In 2015 that became Red Sea Sails. The sea runs deeper here: back in 2005, Mo and Faisal started <b>Red Sea Explorers</b>, a technical-diving liveaboard still running today. <span style="opacity:.6">[Confirm dates &amp; details — placeholder to expand with the full story + photos.]</span></p>
+      </div>
+      <figure style="margin:0;border-radius:var(--r);overflow:hidden;"><img src="sea-spray.jpg" alt="Sea Spray — where it started" style="display:block;width:100%;height:auto;"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 04 · WHAT WE DO — FOUR PILLARS ═══ -->
+<section class="section s-dark atmospheric" id="s-pillars">
+  <div class="sail-ornament"></div>
+  <div class="orb teal" style="width:min(38vw,520px);height:min(38vw,520px);right:-6%;top:-8%;"></div>
+  <div class="orb deep" style="width:min(26vw,340px);height:min(26vw,340px);left:-4%;bottom:6%;"></div>
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap h-content reveal">
+    <span class="eyebrow">What we do</span>
+    <h2 class="h-display">Four connected<br><em>businesses.</em></h2>
+    <div class="rule"></div>
+    <div class="cat-grid two">
+      <div class="cat-card cc-1" style="background:var(--pearl-card)"><div class="cc-tag">Pillar 01 · The School</div><div class="cc-title"><svg class="ic" style="display:inline-block;vertical-align:-4px;margin-right:6px"><use href="#ic-sail"/></svg> IYT Sailing School</div><div class="cc-body">Training the sailors. IYT-accredited from Start Sailing through Yachtmaster since 2015 — our entry point to the community.</div></div>
+      <div class="cat-card cc-2" style="background:var(--pearl-card)"><div class="cc-tag">Pillar 02 · The Fleet</div><div class="cc-title"><svg class="ic" style="display:inline-block;vertical-align:-4px;margin-right:6px"><use href="#ic-anchor"/></svg> Charter Fleet</div><div class="cc-body">A working fleet across monohulls and multihulls, chartered for day sails, private trips, tuition and events.</div></div>
+      <div class="cat-card cc-3" style="background:var(--pearl-card)"><div class="cc-tag">Pillar 03 · Events</div><div class="cc-title"><svg class="ic" style="display:inline-block;vertical-align:-4px;margin-right:6px"><use href="#ic-trophy"/></svg> Regattas &amp; Festivals</div><div class="cc-body">A growing calendar since 2022 — the Red Sea Regatta, the Somabay Sailing Festival, mile-building events, and community sailing.</div></div>
+      <div class="cat-card cc-1" style="background:var(--pearl-card)"><div class="cc-tag">Pillar 04 · The Brands</div><div class="cc-title"><svg class="ic" style="display:inline-block;vertical-align:-4px;margin-right:6px"><use href="#ic-flag"/></svg> Dealership &amp; Partnerships</div><div class="cc-body">Exclusive Hanse dealership for Egypt, alongside working relationships with leading multihull builders and industry partners.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 11 · THE TEAM ═══ -->
+<section class="section s-dark atmospheric" id="s-team">
+  <div class="sail-ornament"></div>
+  <div class="orb teal" style="width:min(38vw,520px);height:min(38vw,520px);right:-6%;top:-8%;"></div>
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap h-content reveal">
+    <span class="eyebrow">The team</span>
+    <h2 class="h-display">The people<br><em>behind it.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">A small, owner-led team of sailors and operators. Everyone in the picture is on the water regularly. The three founders have formed <b>Red Sea Regatta</b> — the events and management company behind RSS.</p>
+    <div class="team-grid">
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-mo.jpg');"></div><div class="team-name">Mo Hammoud</div><div class="team-role">Managing Director · Red Sea Regatta Co-Founder</div><div class="team-bio">Took over and runs RSS day to day. A sailor first; co-founded Red Sea Regatta. The through-line from Sea Spray to today.</div></div>
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-hazem.jpg');"></div><div class="team-name">Hazem Moussa</div><div class="team-role">Co-Founder</div><div class="team-bio">Founder of Contact, Egypt's first consumer-finance company, and its CEO until this year. An avid sailor; backs RSS from the background.</div></div>
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-faisal.jpg');"></div><div class="team-name">Faisal Khalaf</div><div class="team-role">Co-Founder · Red Sea Explorers CEO</div><div class="team-bio">Technical-diving explorer and instructor, CEO of Red Sea Explorers. An avid sailor and RSS co-founder.</div></div>
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-sigi.jpg');"></div><div class="team-name">Sigi Moors</div><div class="team-role">Head Instructor &amp; Regatta Race Committee</div><div class="team-bio">Runs the school and the race committee. Leads our women's team and the instruction programme. [Confirm.]</div></div>
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-mustafa.jpg');"></div><div class="team-name">Mustafa Desha</div><div class="team-role">Fleet Manager &amp; Lead Skipper</div><div class="team-bio">Runs the fleet and skippers our biggest days — maintenance, charter and regatta delivery. [Confirm.]</div></div>
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-laila.jpg');"></div><div class="team-name">Laila Wafaa</div><div class="team-role">Admin &amp; Bookings Manager</div><div class="team-bio">Runs bookings, admin and guest coordination across both bases. [Confirm.]</div></div>
+    </div>
+    <ul class="feat-list" style="color:#fff;max-width:780px;margin-top:44px;">
+      <li>An all-Egyptian crew across the school. We train and employ local sailors.</li>
+      <li>Our head instructor leads a women's team that races our regattas; students join International Women's Sailing Week in Turkey each year.</li>
+      <li>A junior pathway in development with the Egyptian Sailing Federation, bridging youth dinghy sailors into cruising.</li>
+      <li>Mooring buoys only, never anchored on coral — and we hold the water we sail to that standard.</li>
+    </ul>
+    <div style="margin-top:40px;">
+      <span class="eyebrow" style="margin-bottom:12px;">Who we work with</span>
+      <p class="lede" style="font-size:15px;color:rgba(255,255,255,0.8);">Egyptian Sailing Federation · Felix Maritime Agency · FX Yachting (Greece) · Valu / Ulter — plus working relationships across the local marine industry. <span style="opacity:.5">[Builder relationships kept for the email — confirm if you want them named here.]</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 09 · THE FLEET ═══ -->
+<section class="section s-pearl" id="s-fleet">
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">The fleet</span>
+    <h2 class="h-display">Working boats,<br><em>on the water every week.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">A five-boat working fleet across monohulls and multihulls. Every boat earns its living — school, charter, regatta, events.</p>
+    <div class="range-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="range-card">
+        <div class="rc-photo" style="background-image:url('fleet-1.jpg');height:300px;"><div class="rc-tag">Monohull</div></div>
+        <div class="rc-body"><div class="rc-title">Wezza</div><div class="rc-text">[Model · length · role — school, charter, regatta]</div></div>
+      </div>
+      <div class="range-card">
+        <div class="rc-photo" style="background-image:url('fleet-2.jpg');height:300px;"><div class="rc-tag">Monohull</div></div>
+        <div class="rc-body"><div class="rc-title">Tawila</div><div class="rc-text">[Model · length · role]</div></div>
+      </div>
+      <div class="range-card">
+        <div class="rc-photo" style="background-image:url('fleet-3.jpg');height:300px;"><div class="rc-tag">Catamaran</div></div>
+        <div class="rc-body"><div class="rc-title">Sernaka</div><div class="rc-text">[Model · length · role]</div></div>
+      </div>
+      <div class="range-card">
+        <div class="rc-photo" style="background-image:url('fleet-4.jpg');height:300px;"><div class="rc-tag">Catamaran</div></div>
+        <div class="rc-body"><div class="rc-title">Malahi</div><div class="rc-text">[Model · length · role]</div></div>
+      </div>
+      <div class="range-card">
+        <div class="rc-photo" style="background-image:url('fleet-5.jpg');height:300px;"><div class="rc-tag">Charter</div></div>
+        <div class="rc-body"><div class="rc-title">Sea Spray</div><div class="rc-text">[Model · length · role]</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 06 · WHERE WE OPERATE ═══ -->
+<section class="section s-sea" id="s-where">
+  <div class="sail-ornament"></div>
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap h-content reveal">
+    <span class="eyebrow">Where we operate</span>
+    <h2 class="h-display">Egypt's Red Sea coast<br><em>from El Gouna to Somabay.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">A stretch of coastline with the conditions serious sailors want and the infrastructure serious owners need. <b>15–20 knots of thermal wind most days, flat water inside the reef, 300+ sailable days a year.</b> Air 20–30°C, water 22–28°C. The season runs right through winter — with November to April as our peak, exactly when the Med is closed.</p>
+    <p class="lede">Sailing here isn't new — Egypt's yacht clubs date to the monarchy era, a century back. They've faded to dinghy-only over the decades. RSS is rebuilding cruiser and catamaran sailing on this coast: the school, the fleet, the regattas.</p>
+    <div class="cat-grid four">
+      <div class="cat-card cc-1"><div class="cc-icon"><svg class="ic"><use href="#ic-sail"/></svg></div><div class="cc-title">Reliable wind</div><div class="cc-body">Thermal breeze most days, predictable seasons, clean water and steady conditions.</div></div>
+      <div class="cat-card cc-2"><div class="cc-icon"><svg class="ic"><use href="#ic-globe"/></svg></div><div class="cc-title">4–5h from EU hubs</div><div class="cc-body">Direct flights into Hurghada from most European cities. No jet lag, no reposition.</div></div>
+      <div class="cat-card cc-1"><div class="cc-icon"><svg class="ic"><use href="#ic-anchor"/></svg></div><div class="cc-title">Marina infrastructure</div><div class="cc-body">Abu Tig marina in El Gouna; Somabay's new marina completing this year.</div></div>
+      <div class="cat-card cc-2"><div class="cc-icon"><svg class="ic"><use href="#ic-pin"/></svg></div><div class="cc-title">Two bases</div><div class="cc-body">El Gouna and Somabay — both marina towns and event bases, an hour apart. Somabay is our upcoming full base.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE BREAK -->
+<div class="img-break" style="background-image:url('gouna-aerial.jpg');">
+  <div class="wrap">
+    <span class="eyebrow">El Gouna · The Red Sea</span>
+    <h2>Not just a venue.<br><em>A destination.</em></h2>
+  </div>
+</div>
+
+<!-- ═══ 06 · EL GOUNA ═══ -->
+<section class="section s-pearl" id="s-elgouna">
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="ghost-glyph" style="width:min(40vw,520px);height:min(40vw,520px);right:-4%;top:-6%;"><svg><use href="#ic-sail"/></svg></div>
+  <div class="wrap reveal">
+    <span class="eyebrow">El Gouna · Our first base</span>
+    <h2 class="h-display">A resort town<br><em>built for the water.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">A self-contained town of lagoons, marinas and islands on the Red Sea. One of Egypt's premier second-home destinations, one of the world's top kite and wingfoil spots, and the base RSS was built out of.</p>
+    <div class="range-grid" style="grid-template-columns:repeat(2,1fr);gap:14px;">
+      <div class="range-card">
+        <div class="rc-photo" style="background-image:url('gouna-property.jpg');height:210px;"><div class="rc-tag">Buyer Demand</div></div>
+        <div class="rc-body"><div class="rc-title">A property destination</div><div class="rc-text">Egypt's premier second-home town — waterfront villas, marina apartments, international buyers. Established demand from exactly the people who buy boats.</div></div>
+      </div>
+      <div class="range-card">
+        <div class="rc-photo" style="background-image:url('gouna-promenade.jpg');height:210px;"><div class="rc-tag">Abu Tig Marina</div></div>
+        <div class="rc-body"><div class="rc-title">Where the sailors gather</div><div class="rc-text">The waterfront marina RSS was built out of — berths, restaurants, and the crowd our regatta community grew from.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE BREAK -->
+<div class="img-break" style="background-image:url('somabay-aerial.jpg');">
+  <div class="wrap">
+    <span class="eyebrow">Somabay · Our next chapter</span>
+    <h2>A protected bay.<br><em>Our events base.</em></h2>
+  </div>
+</div>
+
+<!-- ═══ 07 · SOMABAY ═══ -->
+<section class="section s-pearl" id="s-somabay">
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="ghost-glyph" style="width:min(40vw,520px);height:min(40vw,520px);left:-4%;bottom:-6%;"><svg><use href="#ic-anchor"/></svg></div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Somabay · An hour south</span>
+    <h2 class="h-display">Private peninsula.<br><em>New marina. New chapter.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">A private peninsula an hour south of El Gouna. Steady cross-shore wind, protected bay, reef diving straight off the jetty, and its own kite and wingfoil stations. <b>The new marina completes this year — where we ran the Somabay Sailing Festival in May and where we're expanding operations from October.</b></p>
+    <p class="lede">El Gouna to Somabay is an hour by road — or a <b>50nm day sail</b> past islands, reefs and deserted anchorages. It's our flotilla and regatta route, with great diving and quiet islands the whole way down. Somabay isn't just an event base: from October it becomes a full year-round operation.</p>
+    <div class="range-grid" style="grid-template-columns:repeat(2,1fr);gap:14px;">
+      <div class="range-card">
+        <div class="rc-photo" style="background-image:url('somabay-bay.jpg');height:300px;"><div class="rc-tag">The Bay</div></div>
+        <div class="rc-body"><div class="rc-title">Protected sailing water</div><div class="rc-text">Reef-sheltered bay, steady cross-shore wind — the course area we ran the Somabay Sailing Festival on in May.</div></div>
+      </div>
+      <div class="range-card">
+        <div class="rc-photo" style="background-image:url('somabay-new-marina.jpg');height:300px;"><div class="rc-tag">New Marina · 2026</div></div>
+        <div class="rc-body"><div class="rc-title">Completing this year</div><div class="rc-text">A new marina delivering in 2026 — the anchor for our Somabay base and year-round winter berthing.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 10 · THE COAST IS OPENING UP ═══ -->
+<section class="section s-sea" id="s-coast">
+  <div class="sail-ornament"></div>
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap h-content reveal">
+    <span class="eyebrow">The bigger picture · 2026–2030</span>
+    <h2 class="h-display">This coast is being built<br><em>into a yachting hotspot.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">Within a short stretch of our two bases, serious developers are putting hundreds of new berths in the water. This isn't a forecast — it's under construction now.</p>
+    <div class="dtable-wrap"><table class="dtable">
+      <thead><tr><th>Development</th><th>Backed by</th><th>What's coming</th><th>Timing</th></tr></thead>
+      <tbody>
+        <tr class="r-live"><td><b>El Gouna</b></td><td>Orascom</td><td>Marina town &amp; first base · new deep-draft marina for superyachts planned</td><td>Live</td></tr>
+        <tr class="r-live"><td><b>Somabay</b></td><td>Abu Soma</td><td>New marina — our events base and 2026 expansion</td><td>2026</td></tr>
+        <tr><td><b>Ras Soma</b></td><td>Travco</td><td>New waterfront development with marina</td><td>Under construction</td></tr>
+        <tr><td><b>Marassi Red Sea</b></td><td>Emaar</td><td>Three marinas, ~600 berths, yacht club</td><td>Phased to 2030</td></tr>
+        <tr><td><b>Amaala</b> · across the water</td><td>Red Sea Global</td><td>Marina · Ocean Race Europe finale 2027 · ~180nm from Somabay</td><td>2026–27</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><p>Gouna, Somabay, Hurghada, Marsa Alam — and the Saudi coast opposite. One connected sailing region coming online at once. We're the only sailing operator positioned across it.</p></div>
+  </div>
+</section>
+
+<div class="img-break" style="background:transparent;height:auto;min-height:0;padding:40px 24px;">
+  <figure class="mapfig" style="margin:0 auto;border-radius:var(--r);max-width:1040px;">
+    <img src="red-sea-map.png" alt="Red Sea Sails — Egyptian Red Sea coast and Saudi coast opposite" style="display:block;width:100%;height:auto;border-radius:var(--r);">
+  </figure>
+</div>
+
+<!-- ═══ 10 · EVENTS & ACTUALS ═══ -->
+<section class="section s-sea" id="s-events">
+  <div class="sail-ornament"></div>
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap h-content reveal">
+    <span class="eyebrow">Events &amp; Regattas</span>
+    <h2 class="h-display">A calendar<br><em>built over four years.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">Since 2022 we've run <b>23 regattas and festivals</b> on this coast — <b>19 self-funded</b> and run at break-even, with <b>sponsors introduced on the last 4</b>. The numbers below are the audience we operate in front of.</p>
+    <div style="padding:56.25% 0 0 0;position:relative;max-width:880px;margin:0 auto 48px"><iframe src="https://player.vimeo.com/video/1204959275?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px" title="RSSR El Gouna"></iframe></div>    <div class="actuals">
+      <div class="actual-card"><div class="ac-yr">2024</div><div class="ac-tag"></div><div class="ac-line"><b>2</b> main events<br><b>3</b> community events<br><b>30+</b> yachts / main event<br><b>100+</b> sailors / event<br><b>150</b> gala guests</div></div>
+      <div class="actual-card"><div class="ac-yr">2025</div><div class="ac-tag">Actuals (Suffered sea closures)</div><div class="ac-line"><b>1</b> main event<br><b>12</b> yachts / main event<br><b>60</b> sailors <br><b>50</b> gala guests</div></div>
+      <div class="actual-card target"><div class="ac-yr">2026</div><div class="ac-tag">Ytd + Target</div><div class="ac-line"><b>3</b> events. completed<br><b>3</b> events to go<br><b>SSF / 8 catamarans</b> / 7 monohulls <br><b>80+</b> sailors<br><b>50</b> gala guests</div></div>
+    </div>
+    <div class="callout"><p>Two dates near-term: the <b>El Gouna Boat Show, 8–10 October 2026</b>, and the third edition of the <b>Red Sea Regatta</b> in December — the flagship on our calendar. Both are open to an Excess presence.</p></div>
+  </div>
+</section>
+
+<!-- ═══ 11 · SOMABAY FESTIVAL CASE STUDY ═══ -->
+<section class="section s-dark atmospheric" id="s-festival">
+  <div class="sail-ornament"></div>
+  <div class="orb teal" style="width:min(38vw,520px);height:min(38vw,520px);left:-6%;top:-8%;"></div>
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap h-content reveal">
+    <span class="eyebrow">Somabay Sailing Festival · May 2026</span>
+    <h2 class="h-display">Fifteen boats.<br><em>Eight catamarans.</em></h2>
+    <div class="rule"></div>
+    <div style="padding:56.25% 0 0 0;position:relative;max-width:880px;margin:0 auto 40px"><iframe src="https://player.vimeo.com/video/1204962739?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479#t=2s" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px" title="Soma Bay"></iframe></div>
+    <p class="lede">Our first festival at Somabay. And for the first time at one of our events, catamarans outnumbered monohulls on the start line.</p>
+    <p class="lede">It's a small number in absolute terms — but it's a directional signal. Egyptian sailing families are moving to catamarans faster than the industry expected, and the reason is cultural: cats carry the extended family and friends the way monohulls never could. Add the growing regatta appetite and this becomes a real emerging market.</p>
+  </div>
+</section>
+
+<!-- ═══ 12 · WHO SAILS WITH US ═══ -->
+<section class="section s-pearl" id="s-who-sails">
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Who sails with us</span>
+    <h2 class="h-display">A local community,<br><em>and an international audience.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">A concentrated audience across the two bases — most sail here regularly, some fly in for events. All four groups are addressable, three from our existing network.</p>
+    <div class="cat-grid four">
+      <div class="cat-card cc-1" style="background:var(--pearl-card)"><div class="cc-icon"><svg class="ic"><use href="#ic-globe"/></svg></div><div class="cc-title">Cairo HNW families</div><div class="cc-body">Weekend and holiday users. Family boats, extended family and friends — the biggest catamaran conversion segment.</div></div>
+      <div class="cat-card cc-2" style="background:var(--pearl-card)"><div class="cc-icon"><svg class="ic"><use href="#ic-anchor"/></svg></div><div class="cc-title">El Gouna residents</div><div class="cc-body">Owners upgrading. Trading up from smaller boats and monohulls. Directly in our network.</div></div>
+      <div class="cat-card cc-1" style="background:var(--pearl-card)"><div class="cc-icon"><svg class="ic"><use href="#ic-helm"/></svg></div><div class="cc-title">Gulf-based owners</div><div class="cc-body">Saudi and UAE clients with an Egyptian Red Sea base. Regional presence, short flights, culturally comfortable.</div></div>
+      <div class="cat-card cc-2" style="background:var(--pearl-card)"><div class="cc-icon"><svg class="ic"><use href="#ic-trophy"/></svg></div><div class="cc-title">European seasonals</div><div class="cc-body">Escaping the Med winter. Existing catamaran owners looking for a year-round base.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 05 · THE MARKET ═══ -->
+<section class="section s-dark atmospheric" id="s-market">
+  <div class="sail-ornament" style="left:-8%;right:auto;transform:scaleX(-1);"></div>
+  <div class="orb teal" style="width:min(38vw,520px);height:min(38vw,520px);right:-6%;top:-8%;"></div>
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap h-content reveal">
+    <span class="eyebrow">The market</span>
+    <h2 class="h-display">Local demand is turning to catamarans.<br><em>We're the operator to meet it.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">On this coast, families and groups are choosing catamarans — for the space, the stability, and the way they carry everyone aboard. The global market had its correction; what lasted is exactly this: owner-buyers in real sailing communities, served by an operator on the ground. The right catamaran partner lifts every part of what we do — not only the dealership.</p>
+    <div class="cat-grid">
+      <div class="cat-card cc-1"><div class="cc-tag">Dealership</div><div class="cc-title">Retail entry</div><div class="cc-body">A dedicated sailing-cat dealer on the Red Sea. A demo people can sail turns interest into orders.</div></div>
+      <div class="cat-card cc-2"><div class="cc-tag">Charter</div><div class="cc-title">Fleet refresh</div><div class="cc-body">Catamarans added to the charter fleet — more capacity, more boats earning through the season.</div></div>
+      <div class="cat-card cc-3"><div class="cc-tag">Onboard</div><div class="cc-title">More on the water</div><div class="cc-body">Cats carry family, friends and groups. Bigger parties, longer days, higher-value charters.</div></div>
+      <div class="cat-card cc-1"><div class="cc-tag">School</div><div class="cc-title">Catamaran courses</div><div class="cc-body">Catamaran-specific IYT training — demand our monohull school can't fully serve yet.</div></div>
+      <div class="cat-card cc-2"><div class="cc-tag">Regattas</div><div class="cc-title">Performance cats</div><div class="cc-body">Performance catamarans on the start line raise our events and draw new sailors.</div></div>
+      <div class="cat-card cc-3"><div class="cc-tag">Channels</div><div class="cc-title">Shows &amp; open boats</div><div class="cc-body">El Gouna Boat Show, open-boat weekends, regional shows — new ways to sell and be seen.</div></div>
+    </div>
+    <div class="callout"><p>The demand is local and real. The market has narrowed to exactly our profile — school, charter, events and dealership under one roof. The right partner strengthens all four.</p></div>
+  </div>
+</section>
+
+<!-- ═══ 14 · FIVE-YEAR PLAN ═══ -->
+<section class="section s-pearl" id="s-plan">
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="ghost-glyph" style="width:min(38vw,500px);height:min(38vw,500px);right:-4%;top:-6%;"><svg><use href="#ic-flag"/></svg></div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Five-year plan · 2026–2030</span>
+    <h2 class="h-display">The five-year plan.<br><em>Excess accelerates it.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">RSS grows on its own — school, charter, events, bases. A partnership doesn't create the plan; it accelerates it. The bottom row is what Excess adds.</p>
+    <div class="plan-table">
+      <div class="pt-head">
+        <div class="pt-lbl">Workstream</div>
+        <div class="pt-yr">2026</div><div class="pt-yr">2027</div><div class="pt-yr">2028</div><div class="pt-yr">2029</div><div class="pt-yr">2030</div>
+      </div>
+      <div class="pt-row">
+        <div class="pt-lbl">Bases</div>
+        <div class="pt-cell">Somabay base opens · marina completes</div>
+        <div class="pt-cell">Both bases year-round</div>
+        <div class="pt-cell">Somabay matching El Gouna volume</div>
+        <div class="pt-cell">Third-base scouting</div>
+        <div class="pt-cell">Regional footprint</div>
+      </div>
+      <div class="pt-row">
+        <div class="pt-lbl">School</div>
+        <div class="pt-cell">IYT across both bases</div>
+        <div class="pt-cell">Federation intake up</div>
+        <div class="pt-cell">Yachtmaster · corporate cohorts</div>
+        <div class="pt-cell">Junior programme scaled</div>
+        <div class="pt-cell">Regional training draw</div>
+      </div>
+      <div class="pt-row">
+        <div class="pt-lbl">Charter fleet</div>
+        <div class="pt-cell">Fleet of 5 · refresh due</div>
+        <div class="pt-cell">Fleet of 6–7 · owner hulls added</div>
+        <div class="pt-cell">Fleet of 8–9 · cat-weighted</div>
+        <div class="pt-cell">Owner-management platform</div>
+        <div class="pt-cell">Largest cat platform on the Red Sea</div>
+      </div>
+      <div class="pt-row">
+        <div class="pt-lbl">Events</div>
+        <div class="pt-cell">El Gouna Boat Show (Oct) · RSR 3rd ed</div>
+        <div class="pt-cell">RSR 4th · Somabay Sailing Week</div>
+        <div class="pt-cell">Gulf invitational added</div>
+        <div class="pt-cell">MENA winter circuit</div>
+        <div class="pt-cell">Egyptian winter championship</div>
+      </div>
+      <div class="pt-row accelerator">
+        <div class="pt-lbl">Excess accelerator</div>
+        <div class="pt-cell"><b>Sign</b> · demo hulls on the water</div>
+        <div class="pt-cell">Hulls in charter &amp; shows</div>
+        <div class="pt-cell">First conversions</div>
+        <div class="pt-cell">Referral pipeline</div>
+        <div class="pt-cell">Sustained regional sales</div>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:40px;"><p><b>Year-round assets — the Mediterranean summer.</b> In July–August the crowd moves to Egypt's North Coast (Sahel), the country's HNW summer scene. We station catamarans there for the season: showcase sailing and social days on clear water, in front of the audience that buys them. Red Sea winter, Med summer — the same boats earning across two markets. Berthing is costly there, so we'd offset it through sail-branding and sponsors — subject to the vessel agreement. <span style="opacity:.6">[To refine together.]</span></p></div>
+  </div>
+</section>
+
+<!-- ═══ 15 · THE ASK ═══ -->
+<section class="section s-dark atmospheric" id="s-ask">
+  <div class="sail-ornament" style="left:-8%;right:auto;transform:scaleX(-1);"></div>
+  <div class="orb deep" style="width:min(30vw,420px);height:min(30vw,420px);right:-4%;bottom:6%;"></div>
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap h-content reveal">
+    <span class="eyebrow">Why it fits</span>
+    <h2 class="h-display">A fit that works<br><em>both ways.</em></h2>
+    <div class="rule"></div>
+    <p class="lede">This is a first conversation, so we'll keep it simple — here's why the two sides fit. The natural first step is Excess boats on our water: in charter, at our regattas, at the shows. How that's structured is the conversation we'd like to open with you.</p>
+    <div class="split">
+      <div>
+        <span class="eyebrow" style="margin-bottom:14px;">Why it works for Excess</span>
+        <ul class="feat-list" style="color:#fff;">
+          <li>A working operator already on the ground — market entry with nothing to build</li>
+          <li>One team covering training, charter, events and retail, each feeding the next</li>
+          <li>A community that turns curious sailors into buyers, in a region opening up now</li>
+          <li>Owner-focused boats matched to how people sail this coast — family, friends, comfort under sail</li>
+        </ul>
+      </div>
+      <div>
+        <span class="eyebrow" style="margin-bottom:14px;">Why it works for RSS</span>
+        <ul class="feat-list" style="color:#fff;">
+          <li>A modern catamaran platform to build the next phase of the business on</li>
+          <li>A global builder's brand, network and training standing behind a local operator</li>
+          <li>A product people can step aboard and test — the shortest path from demand to sale</li>
+          <li>Boats that work year-round — Red Sea winter, Mediterranean summer</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout"><p>We've shown what we've built and where it's headed. The next move is yours — tell us how Excess would want to begin.</p></div>
+  </div>
+</section>
+
+<!-- ═══ 14 · CONTACT ═══ -->
+<section class="section s-dark atmospheric" id="s-contact">
+  <div class="sail-ornament" style="left:-8%;right:auto;transform:scaleX(-1);"></div>
+  <div class="corner">Red Sea Sails · Company Introduction</div>
+  <div class="wrap h-content reveal">
+    <span class="eyebrow">Get in touch</span>
+    <h2 class="h-display">Let's build<br><em>the next chapter.</em></h2>
+    <div class="rule"></div>
+    <div class="closing-grid">
+      <div>
+        <div class="closing-quote"><p>Red Sea Sails is an operator, not a broker. Everything in this deck is built and running today — the base for whatever we build next together.</p></div>
+      </div>
+      <div>
+        <img src="rss-logo.png" alt="Red Sea Sails" style="height:160px;width:auto;margin-bottom:18px;display:block;">
+        <div class="contact-card">
+          <div class="c-row"><span class="c-lbl">Email</span><span class="c-val"><a href="mailto:mo@redseasails.com">mo@redseasails.com</a></span></div>
+          <div class="c-row"><span class="c-lbl">Phone</span><span class="c-val">+20 120 6560 777<br>+20 127 0247 317</span></div>
+          <div class="c-row"><span class="c-lbl">Web</span><span class="c-val"><a href="https://www.redseasails.com" target="_blank">www.redseasails.com</a></span></div>
+          <div class="c-row"><span class="c-lbl">Bases</span><span class="c-val">El Gouna &amp; Somabay<br>Egyptian Red Sea coast</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+const sections=document.querySelectorAll('.section[id]'),navWrap=document.getElementById('navDots');
+sections.forEach(s=>{const d=document.createElement('div');d.className='nav-dot';d.addEventListener('click',()=>s.scrollIntoView({behavior:'smooth'}));navWrap.appendChild(d);});
+const dots=document.querySelectorAll('.nav-dot');
+function updateDots(){let a=0;sections.forEach((s,i)=>{if(window.scrollY>=s.offsetTop-window.innerHeight*0.45)a=i;});dots.forEach((d,i)=>d.classList.toggle('active',i===a));}
+window.addEventListener('scroll',updateDots,{passive:true});updateDots();
+
+const revIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');revIO.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>revIO.observe(el));
+
+(function(){
+  var nav=document.querySelector('.topnav');
+  var links=document.querySelectorAll('.topnav-items a');
+  var showAfter=600;
+  function compute(){var h=document.querySelector('#s-cover');showAfter=h?h.offsetHeight*0.7:600}
+  compute();window.addEventListener('resize',compute);
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>showAfter){nav.classList.add('visible')}else{nav.classList.remove('visible')}
+  },{passive:true});
+  var obs=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){var id=e.target.id;
+      links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+id)})}})
+  },{rootMargin:'-40% 0px -55% 0px'});
+  links.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)obs.observe(s)});
+})();
+</script>
+</body>
+</html>
