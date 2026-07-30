@@ -83,13 +83,13 @@ img{max-width:100%;display:block}
 .cover-stack em{display:block;font-style:normal;color:var(--gold);font-weight:300;font-size:clamp(17px,2.5vw,28px);letter-spacing:.04em;line-height:1.35;margin-top:18px}
 .cover-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:60px;padding-top:34px;border-top:1px solid var(--line)}
 .cover-meta-item .cm-lbl{font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.18em;font-size:9px;color:var(--gold);margin-bottom:9px}
-.cover-meta-item .cm-val{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.55}
+.cover-meta-item .cm-val{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.55}
 .scroll-hint{position:absolute;bottom:32px;right:32px;font-family:"Archivo",sans-serif;font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:10px;color:rgba(255,255,255,0.4);z-index:4;display:flex;align-items:center;gap:12px}
 .scroll-hint::after{content:'';width:28px;height:1px;background:var(--gold)}
 
 /* Nav dots */
 .nav-dots{position:fixed;right:28px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px;z-index:100}
-.nav-dot{width:6px;height:6px;border-radius:50%;background:rgba(124,124,124,0.45);cursor:pointer;transition:all .25s}
+.nav-dot{width:6px;height:6px;border-radius:50%;background:rgba(124,124,124,0.78);cursor:pointer;transition:all .25s}
 .nav-dot.active,.nav-dot:hover{background:var(--gold);transform:scale(1.6)}
 
 .corner{position:absolute;top:32px;right:32px;font-family:"Archivo",sans-serif;font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:10px;color:rgba(255,255,255,0.3);z-index:3}
@@ -138,7 +138,7 @@ img{max-width:100%;display:block}
 .range-card{background:var(--pearl-card);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(7,33,46,0.06)}
 .s-dark .range-card,.s-sea .range-card{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.08)}
 .rc-photo{position:relative;height:178px;background-size:cover;background-position:center;background-color:var(--sea-2)}
-.rc-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,14,20,0.78) 0%,rgba(11,14,20,0.15) 52%,transparent 100%)}
+.rc-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,14,20,0.45) 0%,rgba(11,14,20,0.15) 52%,transparent 100%)}
 .rc-tag{position:absolute;right:18px;top:16px;z-index:2;font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:9px;color:rgba(255,255,255,0.92);text-align:right;line-height:1.35}
 .rc-body{padding:24px 26px 28px;flex:1;display:flex;flex-direction:column}
 .rc-title{font-family:"Archivo",sans-serif;font-weight:700;font-size:18px;color:var(--ink);margin-bottom:8px;line-height:1.2}
@@ -147,11 +147,14 @@ img{max-width:100%;display:block}
 .s-dark .rc-text,.s-sea .rc-text{color:rgba(255,255,255,0.62)}
 
 /* Team grid — special range variant with round photo */
-.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.team-grid{display:grid;gap:22px;margin-top:48px;align-items:stretch}
+.team-grid.founders{grid-template-columns:repeat(3,1fr)}
+.team-grid.crew{grid-template-columns:repeat(4,1fr);margin-top:22px}
+.team-card{height:100%}
+@media(max-width:820px){.team-grid.founders,.team-grid.crew{grid-template-columns:repeat(2,1fr)}}
 .team-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
 .s-pearl .team-card{background:var(--pearl-card);border-color:rgba(7,33,46,0.06)}
-.team-photo{height:300px;background-size:cover;background-position:center;background-color:var(--sea-2)}
-.team-body{padding:22px 24px 26px}
+.team-photo{height:300px;margin:14px 14px 0;border-radius:var(--r-sm);background-size:cover;background-position:center top;background-color:var(--sea-2)}.team-body{padding:22px 24px 26px}
 .team-name{font-family:"Archivo",sans-serif;font-weight:700;font-size:17px;color:#fff;margin-bottom:5px}
 .s-pearl .team-name{color:var(--ink)}
 .team-role{font-family:"Archivo",sans-serif;font-weight:600;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;line-height:1.4}
@@ -336,7 +339,7 @@ img{max-width:100%;display:block}
   <div class="cover-overlay"></div>
   <div class="corner" style="color:rgba(255,255,255,0.4);">Red Sea Sails · Company Introduction</div>
   <div class="wrap cover-content">
-    <img src="rss-logo.png" alt="Red Sea Sails" style="height:52px;width:auto;margin-bottom:32px;display:block;">
+    <img src="rss-logo.png" alt="Red Sea Sails" style="height:80px;width:auto;margin-bottom:32px;display:block;">
     <span class="eyebrow">Company Introduction · For Excess Catamarans · July 2026</span>
     <div class="cover-stack">RED SEA SAILS<em>A sailing hub on the Egyptian Red Sea coast established in 2015 · Independent, owner-run, IYT-accredited.</em></div>
     <div class="cover-meta">
@@ -353,13 +356,12 @@ img{max-width:100%;display:block}
 <div class="icon-strip">
   <div class="wrap">
     <div class="icon-row">
-      <div class="item"><svg class="ic"><use href="#ic-sail"/></svg> IYT-accredited since 2015</div>
-      <div class="item"><svg class="ic"><use href="#ic-pin"/></svg> Bases in El Gouna and Somabay</div>
+      <div class="item"><svg class="ic"><use href="#ic-sail"/></svg> IYT-accredited</div>
+      <div class="item"><svg class="ic"><use href="#ic-pin"/></svg> Based in El Gouna</div>
       <div class="item"><svg class="ic"><use href="#ic-flag"/></svg> Regatta programme since 2022</div>
       <div class="item"><svg class="ic"><use href="#ic-calendar"/></svg> 300+ sailable days a year</div>
     </div>
-  </div><p class="lede">An independent, owner-run sailing operation on the Egyptian Red Sea coast — <b>school, charter, regattas and events under one roof.</b> Based in El Gouna, expanding into Somabay from 2026. We built the local sailing community from almost nothing; today it's the base everything else runs on.</p>
-</div>
+  </div>
 
 <!-- ═══ 03 · WHO WE ARE ═══ -->
 <section class="section s-pearl" id="s-who">
@@ -373,7 +375,7 @@ img{max-width:100%;display:block}
 <div class="split" style="margin-top:44px;align-items:start;grid-template-columns:1.1fr 1fr;gap:56px;">
       <div>
         <span class="eyebrow" style="margin-bottom:14px;">Where it started</span>
-       <p class="lede" style="margin-top:0;margin-bottom:14px;">Around 2013, Mo and Faisal found Sea Spray wasting away in Hurghada's New Marina — the home port of the MV Tala, the Red Sea Explorers dive liveaboard and a legend in her own right. Sea Spray was a Herreshoff H28, built in 1961 and sailed from California to the Red Sea in the 1990s. They bought her knowing almost nothing about sailing and learned it the hard way — books, YouTube, and long days on the water — until they could sail her themselves.</p>
+       <p class="lede" style="margin-top:0;margin-bottom:14px;">Around 2013, Mo and Faisal found Sea Spray wasting away in Hurghada's New Marina — the home port of the MV Tala, the Red Sea Explorers dive liveaboard and a legend in her own right. Sea Spray is a Herreshoff H28 design, built in 1961 and sailed from California to the Red Sea in the 1990s. They bought her knowing almost nothing about sailing and learned it the hard way — books, YouTube, and long days on the water — until they could sail her themselves.</p>
        <p class="lede" style="margin-top:0;margin-bottom:14px;">Friends came along, then more friends, and weekends grew into a community. In 2015, Faisal Khalaf and Hazem Moussa turned it into something real: Red Sea Sails.</p>
        <p class="lede" style="margin-top:0;">The roots run deeper. Red Sea Explorers, the technical-diving liveaboard running since 2005, is still going today — and RSS and RSE have been inseparable ever since. Through every lean season, it has been RSE keeping an eye on RSS, helping her weather the storms.</p>
       </div>
@@ -412,12 +414,17 @@ img{max-width:100%;display:block}
     <div class="rule"></div>
     <p class="lede">A small, owner-led team of sailors and operators. Everyone in the picture is on the water regularly. The three founders have formed <b>Red Sea Regatta</b> — the events and management company behind RSS.</p>
     <div class="team-grid">
-      <div class="team-card"><div class="team-photo" style="background-image:url('team-mo.jpg');background-position:center 30%;"></div><div class="team-body"><div class="team-name">Mo Hammoud</div><div class="team-role">Managing Director · Red Sea Regatta Co-Founder</div><div class="team-bio">Took over and runs RSS day to day. A sailor first; co-founded Red Sea Regatta. The through-line from Sea Spray to today.</div></div></div>
-      <div class="team-card"><div class="team-photo" style="background-image:url('team-hazem.jpg');"></div><div class="team-body"><div class="team-name">Hazem Moussa</div><div class="team-role">Co-Founder</div><div class="team-bio">Founder of Contact, Egypt's first consumer-finance company, and its CEO until this year. An avid sailor; backs RSS from the background.</div></div></div>
-      <div class="team-card"><div class="team-photo" style="background-image:url('team-faisal.jpg');"></div><div class="team-body"><div class="team-name">Faisal Khalaf</div><div class="team-role">Co-Founder · Red Sea Explorers CEO</div><div class="team-bio">Technical-diving explorer and instructor, CEO of Red Sea Explorers. An avid sailor and RSS co-founder.</div></div></div>
-      <div class="team-card"><div class="team-photo" style="background-image:url('team-sigi.jpg');"></div><div class="team-body"><div class="team-name">Sigi Moors</div><div class="team-role">Head Instructor &amp; Regatta Race Committee</div><div class="team-bio">Runs the school and the race committee. Leads our women's team and the instruction programme.</div></div></div>
-      <div class="team-card"><div class="team-photo" style="background-image:url('team-mustafa.jpg');"></div><div class="team-body"><div class="team-name">Mustafa Desha</div><div class="team-role">Fleet Manager &amp; Lead Skipper</div><div class="team-bio">Runs the fleet and skippers our biggest days — maintenance, charter and regatta delivery.</div></div></div>
-      <div class="team-card"><div class="team-photo" style="background-image:url('team-laila.jpg');"></div><div class="team-body"><div class="team-name">Laila Wafaa</div><div class="team-role">Admin &amp; Bookings Manager</div><div class="team-bio">Runs bookings, admin and guest coordination across both bases.</div></div></div>
+    <div class="team-grid founders">
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-mo.jpg');"></div><div class="team-body"><div class="team-name">Mo Hammoud</div><div class="team-role">Managing Director · Red Sea Regatta Co-Founder</div><div class="team-bio">Mo qualified as a dive instructor in 1998, running a centre in Paphos, Cyprus, and spent two decades teaching and exploring before co-founding Red Sea Explorers with Faisal in 2005. A passion for travel and the sea has taken him around the world — most recently to Sri Lanka, chasing surf and building a beach guesthouse — before returning to the Red Sea. Sea Spray was his first sailing affair, and now he runs RSS day to day leading it to the next phase.</div></div></div>
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-hazem.jpg');"></div><div class="team-body"><div class="team-name">Hazem Moussa</div><div class="team-role">Co-Founder</div><div class="team-bio">Hazem co-founded Contact in 2001 and spent 25 years building Egypt's consumer-finance industry from the ground up — managing director, then CEO, then chairman. A passionate sailor and fierce regatta competitor, he took up the sport in 2012 and hasn't looked back. When he isn't racing or building companies, he's at home with his family; he backs RSS from the background, bringing a career's worth of commercial discipline to a company built on the water.</div></div></div>
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-faisal.jpg');"></div><div class="team-body"><div class="team-name">Faisal Khalaf</div><div class="team-role">Co-Founder · Red Sea Explorers CEO</div><div class="team-bio">An avid diver since 1991, Faisal's love of the Red Sea led him to establish Red Sea Explorers in 2005 — from Monkey Diving to deep exploration and rebreather dives, always chasing the next project. He was the managing partner of RSS and he's the reason RSE and RSS have stayed inseparable. Known for his hospitality and an outgoing streak that makes everyone feel at home.</div></div></div>
+    </div>
+    <div class="team-grid crew">
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-sigi.jpg');"></div><div class="team-body"><div class="team-name">Sigi Moors</div><div class="team-role">Head Instructor &amp; Regatta Race Committee</div><div class="team-bio">Sigi discovered sailing at twelve in the Netherlands, then left a corporate career to travel and teach scuba across the Caribbean, Africa and the Red Sea. A small-yacht crossing to Madagascar and a course in Turkey pulled her back to sailing for good. She built and runs the Red Sea's first IYT-accredited sailing school and sits on the regatta race committee — passionate about teaching and empowering women through sailing.</div></div></div>      <div class="team-card"><div class="team-photo" style="background-image:url('team-mustafa.jpg');"></div><div class="team-body"><div class="team-name">Mustafa Desha</div><div class="team-role">Fleet Manager &amp; Lead Skipper</div><div class="team-bio">Mustafa has been with RSS since day one. He comes from a Hurghada fishing family whose trade goes back centuries, and he knows the islands and coastline from El Gouna to Somabay like the back of his hand. He keeps the operation and the fleet running smoothly.</div></div></div>
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-laila.jpg');"></div><div class="team-body"><div class="team-name">Laila Wafaa</div><div class="team-role">Regatta Coordination &amp; Guest Relations</div><div class="team-bio">A dive master, Laila started with Red Sea Explorers guiding on dive trips and joined RSS without hesitation when the chance came. She's integral to regatta management and communications — making sure execution lands — and she runs guest relations across our events.</div></div></div>
+      <div class="team-card"><div class="team-photo" style="background-image:url('team-heba.jpg');"></div><div class="team-body"><div class="team-name">Heba Dessouki</div><div class="team-role">Bookings &amp; Communications</div><div class="team-bio">Heba joined in 2020 and handles all bookings and communications, drawing on a background across business administration, hospitality and tourism. Three decades living with her family on the Red Sea mean she knows everyone and gets everything done.</div></div></div>
+    </div>
+    </div>
     <ul class="feat-list" style="color:#fff;max-width:780px;margin-top:44px;">
       <li>An all-Egyptian crew across the school. We train and employ local sailors.</li>
       <li>Our head instructor leads a women's team that races our regattas; students join International Women's Sailing Week in Turkey each year.</li>
@@ -426,7 +433,7 @@ img{max-width:100%;display:block}
     </ul>
     <div style="margin-top:40px;">
       <span class="eyebrow" style="margin-bottom:12px;">Who we work with</span>
-      <p class="lede" style="font-size:15px;color:rgba(255,255,255,0.8);">Egyptian Sailing Federation · Felix Maritime Agency · FX Yachting (Greece) · Valu / Ulter — plus working relationships across the local marine industry. <span style="opacity:.5">[Builder relationships kept for the email — confirm if you want them named here.]</span></p>
+      <p class="lede" style="font-size:15px;color:rgba(255,255,255,0.8);">Egyptian Sailing Federation · Felix Maritime Agency · FX Yachting (Greece) · Valu / Ulter — plus working relationships across the local marine industry. <span style="opacity:.5"></span></p>
     </div>
   </div>
 </section>
@@ -439,26 +446,26 @@ img{max-width:100%;display:block}
     <h2 class="h-display">Working boats,<br><em>on the water every week.</em></h2>
     <div class="rule"></div>
     <p class="lede">A five-boat working fleet across monohulls and multihulls. Every boat earns its living — school, charter, regatta, events.</p>
-    <div class="range-grid" style="grid-template-columns:repeat(3,1fr);">
+   <div class="range-grid" style="grid-template-columns:repeat(3,1fr);">
       <div class="range-card">
-        <div class="rc-photo" style="background-image:url('fleet-1.jpg');height:300px;"><div class="rc-tag">Monohull</div></div>
-        <div class="rc-body"><div class="rc-title">Wezza</div><div class="rc-text">[Model · length · role — school, charter, regatta]</div></div>
+        <div class="rc-photo" style="background-image:url('fleet-1.jpg');height:300px;"><div class="rc-tag">Charter</div></div>
+        <div class="rc-body"><div class="rc-title">Wezza</div><div class="rc-text"><b>Hanse 455</b><br>LOA 13.86 · beam 4.38 · draft 2.25 m</div></div>
       </div>
       <div class="range-card">
-        <div class="rc-photo" style="background-image:url('fleet-2.jpg');height:300px;"><div class="rc-tag">Monohull</div></div>
-        <div class="rc-body"><div class="rc-title">Tawila</div><div class="rc-text">[Model · length · role]</div></div>
+        <div class="rc-photo" style="background-image:url('fleet-2.jpg');height:300px;"><div class="rc-tag">Charter</div></div>
+        <div class="rc-body"><div class="rc-title">Tawila</div><div class="rc-text"><b>Varianta 44</b><br>LOA 13.15 · beam 4.18 · draft 2.30 m</div></div>
       </div>
       <div class="range-card">
-        <div class="rc-photo" style="background-image:url('fleet-3.jpg');height:300px;"><div class="rc-tag">Catamaran</div></div>
-        <div class="rc-body"><div class="rc-title">Sernaka</div><div class="rc-text">[Model · length · role]</div></div>
+        <div class="rc-photo" style="background-image:url('fleet-3.jpg');height:300px;"><div class="rc-tag">Charter</div></div>
+        <div class="rc-body"><div class="rc-title">Sernaka</div><div class="rc-text"><b>Hanse 385</b><br>LOA 11.73 · beam 3.88 · draft 1.99 m</div></div>
       </div>
       <div class="range-card">
-        <div class="rc-photo" style="background-image:url('fleet-4.jpg');height:300px;"><div class="rc-tag">Catamaran</div></div>
-        <div class="rc-body"><div class="rc-title">Malahi</div><div class="rc-text">[Model · length · role]</div></div>
+        <div class="rc-photo" style="background-image:url('fleet-4.jpg');height:300px;"><div class="rc-tag">School</div></div>
+        <div class="rc-body"><div class="rc-title">Malahi</div><div class="rc-text"><b>Varianta 37</b><br>LOA 11.27 · beam 3.75 · draft 1.95 m</div></div>
       </div>
       <div class="range-card">
-        <div class="rc-photo" style="background-image:url('fleet-5.jpg');height:300px;"><div class="rc-tag">Charter</div></div>
-        <div class="rc-body"><div class="rc-title">Sea Spray</div><div class="rc-text">[Model · length · role]</div></div>
+        <div class="rc-photo" style="background-image:url('fleet-5.jpg');height:300px;"><div class="rc-tag">Classic | Events</div></div>
+        <div class="rc-body"><div class="rc-title">Sea Spray</div><div class="rc-text"><b>Herreshoff H28</b><br>1961 · LOA 8.00 m</div></div>
       </div>
     </div>
   </div>
@@ -713,7 +720,7 @@ img{max-width:100%;display:block}
     <span class="eyebrow">Why it fits</span>
     <h2 class="h-display">A fit that works<br><em>both ways.</em></h2>
     <div class="rule"></div>
-    <p class="lede">This is a first conversation, so we'll keep it simple — here's why the two sides fit. The natural first step is Excess boats on our water: in charter, at our regattas, at the shows. How that's structured is the conversation we'd like to open with you.</p>
+    <p class="lede">This is a first conversation, here's why the two sides fit. The natural first step is Excess boats on our water: in charter, at our regattas, at the shows.</p>
     <div class="split">
       <div>
         <span class="eyebrow" style="margin-bottom:14px;">Why it works for Excess</span>
