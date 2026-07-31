@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Red Sea Sails · Company Introduction · For Excess Catamarans</title>
-<meta name="description" content="Red Sea Sails · Sailing operator on Egypt's Red Sea coast · School, charter, regattas, events. Introduction for Excess Catamarans, July 2026.">
+<title>Red Sea Sails · Company Introduction · For <span class="xword">Excess</span> Catamarans</title>
+<meta name="description" content="Red Sea Sails · Sailing operator on Egypt's Red Sea coast · School, charter, regattas, events. Introduction for Catamarans, July 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&family=Hanken+Grotesk:wght@300;400;500;600;700&family=Antonio:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -247,8 +247,8 @@ img{max-width:100%;display:block}
 .pt-cell{padding:16px 14px;font-size:12px;color:var(--muted);line-height:1.5;border-right:1px solid rgba(7,33,46,0.04)}
 .pt-cell:last-child{border-right:none}
 .pt-cell b{color:var(--ink);font-weight:600}
-.pt-row.accelerator .pt-lbl{background:rgba(78,201,192,0.10);color:var(--azure);border-left:3px solid var(--gold)}
-.pt-row.accelerator .pt-cell{background:rgba(78,201,192,0.04)}
+.pt-row.accelerator .pt-lbl{background:rgba(234,90,0,0.12);color:#EA5A00;border-left:3px solid #EA5A00}
+.pt-row.accelerator .pt-cell{background:rgba(234,90,0,0.05)}
 
 /* Data table */
 .dtable-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:44px}
@@ -300,7 +300,7 @@ img{max-width:100%;display:block}
 }
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
-/* Excess-brand handshake accent */
+/* <span class="xword">Excess</span>-brand handshake accent */
 .xlab{position:relative}
 .xlab .x-strip{position:absolute;left:0;top:0;bottom:0;width:5px;background:#EA5A00}
 .xlab .eyebrow{color:#EA5A00}
@@ -327,6 +327,10 @@ img{max-width:100%;display:block}
  .h-display{font-size:clamp(30px,8vw,46px)!important}
  body{overflow-x:hidden!important}
 }
+.xword{color:#EA5A00;font-weight:600}
+.bignum{position:absolute;z-index:0;font-family:"Antonio",sans-serif;font-weight:200;line-height:.78;letter-spacing:-.02em;color:rgba(255,255,255,.05);pointer-events:none;user-select:none}
+.s-pearl .bignum{color:rgba(7,33,46,.05)}
+@media(max-width:900px){.icon-row{grid-template-columns:1fr 1fr}.bignum{display:none}}
 </style>
 </head>
 
@@ -338,10 +342,13 @@ img{max-width:100%;display:block}
       <a href="#s-who">Overview</a>
       <a href="#s-coast">The Coast</a>
       <a href="#s-events">Events</a>
+      <a href="#s-numbers">Numbers</a>
       <a href="#s-market">Market</a>
+      <a href="#s-lab">Excess Lab</a>
       <a href="#s-plan">Plan</a>
-      <a href="#s-ask">The Ask</a>
+      <a href="#s-partnership">Partnership</a>
       <a href="#s-contact">Contact</a>
+      <a href="https://redsearegatta.com" target="_blank" rel="noopener" style="color:var(--gold-soft)">Regatta ↗</a>
     </div>
   </div>
 </nav>
@@ -368,7 +375,7 @@ img{max-width:100%;display:block}
   <div class="corner" style="color:rgba(255,255,255,0.4);">Red Sea Sails · Company Introduction</div>
   <div class="wrap cover-content">
     <img src="rss-logo.png" alt="Red Sea Sails" style="height:80px;width:auto;margin-bottom:32px;display:block;">
-    <span class="eyebrow">Company Introduction · For Excess Catamarans · July 2026</span>
+    <span class="eyebrow">Company Introduction · For <span class="xword">Excess</span> Catamarans · July 2026</span>
     <div class="cover-stack">RED SEA SAILS<em>A sailing hub on the Egyptian Red Sea coast established in 2015 · Independent, owner-run, IYT-accredited.</em></div>
     <div class="cover-meta">
       <div class="cover-meta-item"><div class="cm-lbl">Founded</div><div class="cm-val">2015<br>Independent, owner-run</div></div>
@@ -452,16 +459,17 @@ img{max-width:100%;display:block}
       <div class="team-card"><div class="team-photo" style="background-image:url('team-heba.jpg');"></div><div class="team-body"><div class="team-name">Heba Dessouki</div><div class="team-role">Bookings &amp; Communications</div><div class="team-bio">Heba joined in 2020 and handles all bookings and communications, drawing on a background across business administration, hospitality and tourism. Three decades living with her family on the Red Sea mean she knows everyone and gets everything done.</div></div></div>
     </div>
     </div>
-    <ul class="feat-list" style="color:#fff;max-width:780px;margin-top:44px;">
-      <li>An all-Egyptian crew across the school. We train and employ local sailors.</li>
-      <li>Our head instructor leads a women's team that races our regattas; students join International Women's Sailing Week in Turkey each year.</li>
-      <li>A junior pathway in development with the Egyptian Sailing Federation, bridging youth dinghy sailors into cruising.</li>
-      <li>Mooring buoys only, never anchored on coral — and we hold the water we sail to that standard.</li>
-    </ul>
-    <div style="margin-top:40px;">
-      <span class="eyebrow" style="margin-bottom:12px;">Who we work with</span>
-      <p class="lede" style="font-size:15px;color:rgba(255,255,255,0.8);">Egyptian Sailing Federation · Felix Maritime Agency · FX Yachting (Greece) · Valu / Ulter — plus working relationships across the local marine industry. <span style="opacity:.5"></span></p>
-    </div>
+    <ul class="feat-list" style="color:#fff; max-width:780px; margin:44px auto 0 auto;">
+  <li>An all-Egyptian crew across the school. We train and employ local sailors.</li>
+  <li>Our head instructor leads a women's team that races our regattas; students join International Women's Sailing Week in Turkey each year.</li>
+  <li>A junior pathway in development with the Egyptian Sailing Federation, bridging youth dinghy sailors into cruising.</li>
+  <li>Mooring buoys only, never anchored on coral — and we hold the water we sail to that standard.</li>
+</ul>
+
+<div style="margin:40px auto 0 auto; max-width:780px;">
+  <span class="eyebrow" style="margin-bottom:12px;">Who we work with</span>
+  <p class="lede" style="font-size:15px;color:rgba(255,255,255,0.8);">Egyptian Sailing Federation · Felix Maritime Agency · FX Yachting (Greece) · Valu / Ulter — plus working relationships across the local marine industry. <span style="opacity:.5"></span></p>
+</div>
   </div>
 </section>
 
@@ -501,6 +509,7 @@ img{max-width:100%;display:block}
 <!-- ═══ BY THE NUMBERS ═══ -->
 <section class="section s-dark atmospheric" id="s-numbers">
   <div class="corner">Red Sea Sails · Company Introduction</div>
+    <div class="bignum" style="right:3%;top:-6%;font-size:clamp(180px,28vw,400px);">161</div>
   <div class="wrap h-content reveal">
     <span class="eyebrow">By the numbers</span>
     <h2 class="h-display">Small, but real.<br><em>And growing.</em></h2>
@@ -520,6 +529,15 @@ img{max-width:100%;display:block}
     <div class="callout"><p>A real record behind a small operation — 1,404 charters, 4,000+ guests, 161 sailors trained, across two bases and every month of the year. The finance pack has the full picture; this is the shape of it.</p></div>
   </div>
 </section>
+
+<!-- IMAGE BREAK -->
+<div class="img-break" style="background-image:url('gouna-aerial.jpg');">
+  <div class="wrap">
+    <span class="eyebrow">El Gouna · The Red Sea</span>
+    <h2>Not just a venue.<br><em>A destination.</em></h2>
+  </div>
+</div>
+
 <!-- ═══ 06 · WHERE WE OPERATE ═══ -->
 <section class="section s-sea" id="s-where">
   <div class="sail-ornament"></div>
@@ -538,14 +556,6 @@ img{max-width:100%;display:block}
     </div>
   </div>
 </section>
-
-<!-- IMAGE BREAK -->
-<div class="img-break" style="background-image:url('gouna-aerial.jpg');">
-  <div class="wrap">
-    <span class="eyebrow">El Gouna · The Red Sea</span>
-    <h2>Not just a venue.<br><em>A destination.</em></h2>
-  </div>
-</div>
 
 <!-- ═══ 06 · EL GOUNA ═══ -->
 <section class="section s-pearl" id="s-elgouna">
@@ -632,6 +642,7 @@ img{max-width:100%;display:block}
 <!-- ═══ 10 · EVENTS & ACTUALS ═══ -->
 <section class="section s-sea" id="s-events">
   <div class="sail-ornament"></div>
+  <div class="bignum" style="right:3%;top:-1%;font-size:clamp(180px,28vw,400px);">23</div>
   <div class="corner">Red Sea Sails · Company Introduction</div>
   <div class="wrap h-content reveal">
     <span class="eyebrow">Events &amp; Regattas</span>
@@ -643,7 +654,7 @@ img{max-width:100%;display:block}
       <div class="actual-card"><div class="ac-yr">2025</div><div class="ac-tag">Actuals (Suffered sea closures)</div><div class="ac-line"><b>1</b> main event<br><b>12</b> yachts / main event<br><b>60</b> sailors <br><b>50</b> gala guests</div></div>
       <div class="actual-card target"><div class="ac-yr">2026</div><div class="ac-tag">Ytd + Target</div><div class="ac-line"><b>3</b> events. completed<br><b>3</b> events to go<br><b>SSF / 8 catamarans</b> / 7 monohulls <br><b>80+</b> sailors<br><b>50</b> gala guests</div></div>
     </div>
-    <div class="callout"><p>Two dates near-term: the <b>El Gouna Boat Show, 8–10 October 2026</b>, and the third edition of the <b>Red Sea Regatta</b> in December — the flagship on our calendar. Both are open to an Excess presence.</p></div>
+    <div class="callout"><p>Two dates near-term: the <b>El Gouna Boat Show, 8–10 October 2026</b>, and the third edition of the <b>Red Sea Regatta</b> in December — the flagship on our calendar. Both are open to an <span class="xword">Excess</span> presence.</p></div>
   </div>
 </section>
 
@@ -701,6 +712,14 @@ img{max-width:100%;display:block}
   </div>
 </section>
 
+<!-- IMAGE BREAK -->
+<div class="img-break" style="background-image:url('drone-reef.jpg');">
+  <div class="wrap">
+    <span class="eyebrow">The Red Sea</span>
+    <h2>The Excess<br><em>Playground.</em></h2>
+  </div>
+</div>
+
 <!-- ═══ EXCESS LAB & COMMUNITY ═══ -->
 <section class="section s-dark atmospheric xlab" id="s-lab">
   <div class="x-strip"></div>
@@ -709,12 +728,12 @@ img{max-width:100%;display:block}
     <span class="eyebrow">Excess Lab · Community</span>
     <h2 class="h-display">You're building the tribe.<br><em>We're building the community on the Red Sea.</em></h2>
     <div class="rule" style="background:#EA5A00;"></div>
-    <p class="lede">The Excess Lab is the one collaborative platform in the catamaran world — a growing tribe of owners, prospects and your design team. We're doing the same on the water: building the community and expanding the territory. We'd be your presence here, turning Lab members into sailors, and sailors into owners.</p>
+    <p class="lede">The <span class="xword">Excess</span> Lab is the one collaborative platform in the catamaran world — a growing tribe of owners, prospects and your design team. We're doing the same on the water: building the community and expanding the territory. We'd be your presence here, turning Lab members into sailors, and sailors into owners.</p>
     <div class="xlab-grid">
-      <div class="xlab-card"><div class="xc-tag">Excess Campus</div><div class="xc-title">A Red Sea edition</div><div class="xc-body">We run the school, the boats and the logistics; Excess brings the format. A winter campus for the Nov–Apr window when the Med is closed.</div></div>
+      <div class="xlab-card"><div class="xc-tag">Excess Campus</div><div class="xc-title">A Red Sea edition</div><div class="xc-body">We run the school, the boats and the logistics; <span class="xword">Excess</span> brings the format. A winter campus for the Nov–Apr window when the Med is closed.</div></div>
       <div class="xlab-card"><div class="xc-tag">Excess Sailors</div><div class="xc-title">Stories from a new sea</div><div class="xc-body">Crossings, regattas and coast-to-coast sailing the Lab hasn't featured yet — Red Sea content, owners and crews for the community feed.</div></div>
       <div class="xlab-card"><div class="xc-tag">The Forum</div><div class="xc-title">On-the-ground answers</div><div class="xc-body">Real conditions, real routes, real ownership in an emerging region — a local voice in the Lab for anyone considering a boat this side of the map.</div></div>
-      <div class="xlab-card"><div class="xc-tag">Open boats &amp; events</div><div class="xc-title">Where online meets water</div><div class="xc-body">The El Gouna Boat Show and Somabay Sailing Week give the Lab community somewhere to actually step aboard — the Tribe, on the water.</div></div>
+      <div class="xlab-card"><div class="xc-tag">Open boats &amp; events</div><div class="xc-title">Where online meets water</div><div class="xc-body">The Red Sea Sailing Regatta and Somabay Sailing Week give the Lab community somewhere to actually step aboard — the Tribe, on the water.</div></div>
     </div>
     <div class="callout"><p>Excess built the platform. We bring the region, the community and the boats on the water to fill it.</p></div>
   </div>
@@ -728,7 +747,7 @@ img{max-width:100%;display:block}
     <span class="eyebrow">Five-year plan · 2026–2030</span>
     <h2 class="h-display">The five-year plan.<br><em>Excess accelerates it.</em></h2>
     <div class="rule"></div>
-    <p class="lede">RSS grows on its own — school, charter, events, bases. A partnership doesn't create the plan; it accelerates it. The bottom row is what Excess adds.</p>
+    <p class="lede">RSS grows on its own — school, charter, events, bases. A partnership doesn't create the plan; it accelerates it. The bottom row is what <span class="xword">Excess</span> adds.</p>
     <div class="plan-table">
       <div class="pt-head">
         <div class="pt-lbl">Workstream</div>
@@ -779,8 +798,8 @@ img{max-width:100%;display:block}
   </div>
 </section>
 
-<!-- ═══ 15 · THE ASK ═══ -->
-<section class="section s-dark atmospheric" id="s-ask">
+<!-- ═══ 15 · THE Partnership ═══ -->
+<section class="section s-dark atmospheric" id="s-partnership">
   <div class="sail-ornament" style="left:-8%;right:auto;transform:scaleX(-1);"></div>
   <div class="orb deep" style="width:min(30vw,420px);height:min(30vw,420px);right:-4%;bottom:6%;"></div>
   <div class="corner">Red Sea Sails · Company Introduction</div>
@@ -788,7 +807,7 @@ img{max-width:100%;display:block}
     <span class="eyebrow">Why it fits</span>
     <h2 class="h-display">A fit that works<br><em>both ways.</em></h2>
     <div class="rule"></div>
-    <p class="lede">This is a first conversation, here's why the two sides fit. The natural first step is Excess boats on our water: in charter, at our regattas, at the shows.</p>
+    <p class="lede">This is a first conversation, here's why the two sides fit. The natural first step is <span class="xword">Excess</span> boats on our water: in charter, at our regattas, at the shows.</p>
     <div class="split">
       <div>
         <span class="eyebrow" style="margin-bottom:14px;">Why it works for Excess</span>
@@ -809,7 +828,7 @@ img{max-width:100%;display:block}
         </ul>
       </div>
     </div>
-    <div class="callout"><p>We've shown what we've built and where it's headed. The next move is yours — tell us how Excess would want to begin.</p></div>
+    <div class="callout"><p>We've shown what we've built and where it's headed. The next move is yours — tell us how <span class="xword">Excess</span> would want to begin.</p></div>
   </div>
 </section>
 
@@ -828,9 +847,9 @@ img{max-width:100%;display:block}
       <div>
         <img src="rss-logo.png" alt="Red Sea Sails" style="height:160px;width:auto;margin-bottom:18px;display:block;">
         <div class="contact-card">
-          <div class="c-row"><span class="c-lbl">Email</span><span class="c-val"><a href="mailto:mo@redseasails.com">mo@redseasails.com</a></span></div>
-          <div class="c-row"><span class="c-lbl">Phone</span><span class="c-val">+20 120 6560 777<br>+20 127 0247 317</span></div>
-          <div class="c-row"><span class="c-lbl">Web</span><span class="c-val"><a href="https://www.redseasails.com" target="_blank">www.redseasails.com</a></span></div>
+          <div class="c-row"><span class="c-lbl">Email</span><span class="c-val"><br><a href="mailto:mo@redseasails.com">mo@redseasails.com</a><br><a href="mailto:sailingregatta@redseasails.com">sailingregatta@redseasails.com</a></span></div>
+          <div class="c-row"><span class="c-lbl">Phone</span><span class="c-val">+20 127 0247 317</a><br>+20 120 6560 777</span></div>
+          <div class="c-row"><span class="c-lbl">Web</span><span class="c-val"><a href="https://www.redseasails.com" target="_blank">www.redseasails.com</a><br><a href="https://www.redsearegatta.com" target="_blank">www.redsearegatta.com</a></span></div>
           <div class="c-row"><span class="c-lbl">Bases</span><span class="c-val">El Gouna &amp; Somabay<br>Egyptian Red Sea coast</span></div>
         </div>
       </div>
