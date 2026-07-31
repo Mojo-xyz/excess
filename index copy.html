@@ -229,10 +229,10 @@ img{max-width:100%;display:block}
 .topnav-mark::before{content:"";width:22px;height:2px;background:var(--gold)}
 .topnav-items{display:flex;align-items:center;gap:26px;flex-wrap:nowrap}
 .topnav-items a{font-family:"Archivo",sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:10.5px;color:rgba(255,255,255,0.68);padding:6px 0;position:relative;transition:color .2s ease;white-space:nowrap}
-.topnav-items a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#EA5A00;transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.4,0,.2,1)}
-.topnav-items a:hover{color:#EA5A00}
+.topnav-items a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.topnav-items a:hover{color:#fff}
 .topnav-items a:hover::after,.topnav-items a.active::after{transform:scaleX(1)}
-.topnav-items a.active{color:#EA5A00;font-weight:700}
+.topnav-items a.active{color:#fff}
 @media (max-width:1080px){.topnav-items{gap:18px}.topnav-items a{font-size:9.5px;letter-spacing:.12em}}
 @media (max-width:900px){.topnav{display:none}}
 
@@ -331,59 +331,6 @@ img{max-width:100%;display:block}
 .bignum{position:absolute;z-index:0;font-family:"Antonio",sans-serif;font-weight:200;line-height:.78;letter-spacing:-.02em;color:rgba(255,255,255,.05);pointer-events:none;user-select:none}
 .s-pearl .bignum{color:rgba(7,33,46,.05)}
 @media(max-width:900px){.icon-row{grid-template-columns:1fr 1fr}.bignum{display:none}}
-
-/* Fleet Card Styling */
-.rc-model-title {
-  font-family: 'Antonio', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--gold, #4EC9C0);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  line-height: 1.1;
-  margin-top: 4px;
-  margin-bottom: 8px;
-}
-.rc-boat-name {
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--muted, #5C6F78);
-}
-.s-dark .rc-boat-name, .s-sea .rc-boat-name {
-  color: rgba(255, 255, 255, 0.6);
-}
-.rc-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 8px;
-  align-items: center;
-}
-.rc-chip {
-  background: rgba(78, 201, 192, 0.08);
-  border: 1px solid rgba(78, 201, 192, 0.2);
-  border-radius: 4px;
-  padding: 3px 8px;
-  font-size: 0.75rem;
-  color: var(--text-dark, #0C2029);
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  white-space: nowrap;
-}
-.s-dark .rc-chip, .s-sea .rc-chip {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.15);
-  color: #E0E0E0;
-}
-.rc-chip span.label {
-  opacity: 0.6;
-  font-size: 0.68rem;
-  font-weight: 700;
-}
-
 </style>
 </head>
 
@@ -537,33 +484,23 @@ img{max-width:100%;display:block}
    <div class="range-grid" style="grid-template-columns:repeat(3,1fr);">
       <div class="range-card">
         <div class="rc-photo" style="background-image:url('fleet-1.jpg');height:300px;"><div class="rc-tag">Charter</div></div>
-        <div class="rc-body"><div class="rc-boat-name">Wezza</div>
-<div class="rc-model-title">Hanse 455</div>
-<div class="rc-chips"><span class="rc-chip">↔ <span class="label">LOA</span> 13.86m</span><span class="rc-chip">⇔ <span class="label">BEAM</span> 4.38m</span><span class="rc-chip">↧ <span class="label">DRAFT</span> 2.25m</span></div></div>
+        <div class="rc-body"><div class="rc-title">Wezza</div><div class="rc-text"><b>Hanse 455</b><br>LOA 13.86 · beam 4.38 · draft 2.25 m</div></div>
       </div>
       <div class="range-card">
         <div class="rc-photo" style="background-image:url('fleet-2.jpg');height:300px;"><div class="rc-tag">Charter</div></div>
-        <div class="rc-body"><div class="rc-boat-name">Tawila</div>
-<div class="rc-model-title">Varianta 44</div>
-<div class="rc-chips"><span class="rc-chip">↔ <span class="label">LOA</span> 13.15m</span><span class="rc-chip">⇔ <span class="label">BEAM</span> 4.18m</span><span class="rc-chip">↧ <span class="label">DRAFT</span> 2.30m</span></div></div>
+        <div class="rc-body"><div class="rc-title">Tawila</div><div class="rc-text"><b>Varianta 44</b><br>LOA 13.15 · beam 4.18 · draft 2.30 m</div></div>
       </div>
       <div class="range-card">
         <div class="rc-photo" style="background-image:url('fleet-3.jpg');height:300px;"><div class="rc-tag">Charter</div></div>
-        <div class="rc-body"><div class="rc-boat-name">Sernaka</div>
-<div class="rc-model-title">Hanse 385</div>
-<div class="rc-chips"><span class="rc-chip">↔ <span class="label">LOA</span> 11.73m</span><span class="rc-chip">⇔ <span class="label">BEAM</span> 3.88m</span><span class="rc-chip">↧ <span class="label">DRAFT</span> 1.99m</span></div></div>
+        <div class="rc-body"><div class="rc-title">Sernaka</div><div class="rc-text"><b>Hanse 385</b><br>LOA 11.73 · beam 3.88 · draft 1.99 m</div></div>
       </div>
       <div class="range-card">
         <div class="rc-photo" style="background-image:url('fleet-4.jpg');height:300px;"><div class="rc-tag">School</div></div>
-        <div class="rc-body"><div class="rc-boat-name">Malahi</div>
-<div class="rc-model-title">Varianta 37</div>
-<div class="rc-chips"><span class="rc-chip">↔ <span class="label">LOA</span> 11.27m</span><span class="rc-chip">⇔ <span class="label">BEAM</span> 3.75m</span><span class="rc-chip">↧ <span class="label">DRAFT</span> 1.95m</span></div></div>
+        <div class="rc-body"><div class="rc-title">Malahi</div><div class="rc-text"><b>Varianta 37</b><br>LOA 11.27 · beam 3.75 · draft 1.95 m</div></div>
       </div>
       <div class="range-card">
         <div class="rc-photo" style="background-image:url('fleet-5.jpg');height:300px;"><div class="rc-tag">Classic | Events</div></div>
-        <div class="rc-body"><div class="rc-boat-name">Sea Spray</div>
-<div class="rc-model-title">Herreshoff H28</div>
-<div class="rc-chips"><span class="rc-chip">↔ <span class="label">LOA</span> 8.00m</span></div></div>
+        <div class="rc-body"><div class="rc-title">Sea Spray</div><div class="rc-text"><b>Herreshoff H28</b><br>1961 · LOA 8.00 m</div></div>
       </div>
     </div>
   </div>
